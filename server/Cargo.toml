@@ -1,0 +1,14 @@
+[package]
+name = "flint-server"
+version = "0.1.0"
+edition = "2021"
+description = "OpenAI 兼容的 Flint 推理服务（链接 flint-metal 引擎）"
+
+[dependencies]
+serde_json = { version = "1", features = ["preserve_order"] }
+minijinja = { version = "2", features = ["preserve_order"] }
+tokenizers = { version = "0", default-features = false, features = ["fancy-regex"] }
+
+[profile.release]
+opt-level = 3
+debug = false

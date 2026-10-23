@@ -1,0 +1,17 @@
+# 模型权重与下载物（根目录）
+/models/
+/ref/
+/data/
+/download/
+/third_party/llama.cpp/
+/third_party/dl/
+
+# 构建产物
+/build/
+/server/target/
+
+# 本地配置
+/server/.cargo/
+/.pi-flint/
+*.bak*
+.DS_Store
